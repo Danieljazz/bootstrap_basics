@@ -6,49 +6,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-        <link rel="stylesheet" href="./styles/style.css">
+        <link href="./styles/style.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">STAT</a>   
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">INV</a>  
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">DATA </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">MAP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">RADIO</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="container">
+        <div class="main">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">STAT</a>   
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">INV</a>  
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">DATA </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">MAP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">RADIO</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <ul class="nav nav-tabs" id="statTab" role="tablist">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">STATUS</a>
-                    Status
+                    <button href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#status-tab">STATUS</button>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">SPECIAL</a>
-                    Special
+                    <button href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#special-tab">SPECIAL</button>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">PERKS</a>
-                    Perks
+                    <button href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#perks-tab">PERKS</button>
                 </li>
             </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="status-tab" role="tabpanel">Status</div>
+                <div class="tab-pane" id="special-tab" role="tabpanel">Home</div>
+                <div class="tab-pane" id="perks-tab" role="tabpanel">Mome</div>
+            </div>
+            <div class="center-image">
+                <img src="./img/valut_boy.webp" alt="There should be pip-boy :(">
         </div>
+        <footer>
+            <div class="text-center">
+                <div class="row">
+                    <div class="col-3">
+                        HP 90/90
+                    </div>
+                    <div class="col-6">
+                        Level 69
+                    </div>
+                    <div class="col-3">
+                        AP 50/50
+                    </div>
+                </div>
+            </div>
+        </footer>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <script src="./js/pipboy.js"></script>
     </body>
+</div>
 </html>
