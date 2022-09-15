@@ -1,13 +1,27 @@
+$font-green: #14fe17;
+$background: #272b23;
+
 @mixin greenFiltr{
     filter: grayscale(1) sepia(100%) hue-rotate(64deg) saturate(4) brightness(1) contrast(1);
+}
+
+@mixin green-bg-ft{
+    color:$font-green;
+    background: $background;
+    font-size: 24px;
+    font-family:monospace;
+}
+
+body, .navbar, .nav-tabs > .nav-item > button, .nav-tabs > .nav-item > button.active,  #navbar-nav > .navbar-nav > .nav-item > a, .nav-link > .active {
+    @include green-bg-ft();
 }
 
 .center-image img{
     margin: auto;
     display: block;
-    height: 411px;
+    height: 811px;
     margin-top: 35px;
-    transform: scaleX(1);
+    transform: scaleX(-1);
     @include greenFiltr();
 }
 footer{
@@ -15,10 +29,8 @@ footer{
     bottom: 0;
     margin: auto;
     width: 100%;
-    color: rgb(77, 251, 77);
-    background: rgb(26, 103, 26);
+    font-family:monospace;
+    font-weight: 300;// maybe to remove
+    @include green-bg-ft();
     font-size: 30px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 300;
-    @include greenFiltr(); // maybe to removes
 }
