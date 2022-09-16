@@ -5,6 +5,35 @@ body, .navbar, .nav-tabs > .nav-item > button, .nav-tabs > .nav-item > button.ac
   font-family: monospace;
 }
 
+.navbar-nav {
+  border-bottom: 1px solid #14fe17;
+  margin: 20px;
+}
+.navbar-nav .nav-item {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar::before, .navbar::after {
+  bottom: 10px;
+  background: #14fe17;
+  content: "";
+  width: 2px;
+  height: 19px;
+  position: absolute;
+  z-index: 2;
+  display: block;
+}
+
+.navbar::after {
+  right: 18px;
+}
+
+.navbar::before {
+  left: 18px;
+}
+
 .center-image img {
   margin: auto;
   display: block;
