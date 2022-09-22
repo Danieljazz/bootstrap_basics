@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 body, .navbar, .nav-tabs > .nav-item > button, .nav-tabs > .nav-item > button.active, #navbar-nav > .navbar-nav > .nav-item > a, .nav-link > .active {
   color: #14fe17;
   background: #272b23;
@@ -43,16 +47,33 @@ body, .navbar, .nav-tabs > .nav-item > button, .nav-tabs > .nav-item > button.ac
   filter: grayscale(1) sepia(100%) hue-rotate(64deg) saturate(4) brightness(1) contrast(1);
 }
 
-footer {
+.bottom-bar {
   position: absolute;
-  bottom: 0;
-  margin: auto;
+  margin: 305px 0px 0px 20px;
   width: 100%;
-  font-family: monospace;
   font-weight: 300;
   color: #14fe17;
   background: #272b23;
   font-size: 24px;
   font-family: monospace;
   font-size: 30px;
+}
+
+.footer-item {
+  border: 1px solid #14fe17;
+  margin: 0px 5px 0px 5px;
+  background-color: #0b4a07;
+}
+
+.col-3 {
+  width: 24%;
+  margin: 0px 3px 0px 3px;
+}
+
+body::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: repeating-radial-gradient(rgba(0, 0, 0, 0.5) 1px, rgba(0, 0, 0, 0.4) 1px, transparent 1px, transparent 1px);
 }/*# sourceMappingURL=style.css.map */
