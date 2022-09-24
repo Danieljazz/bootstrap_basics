@@ -9,17 +9,29 @@ $background-green: #0b4a07;
 @mixin green-bg-ft{
     color:$font-green;
     background: $background;
-    font-size: 24px;
+    font-size: 32px;
     font-family:monospace;
 }
 body{
     overflow: hidden;
 }
 
-body, .navbar, .nav-tabs > .nav-item > button, .nav-tabs > .nav-item > button.active,  #navbar-nav > .navbar-nav > .nav-item > a, .nav-link > .active {
+body, .navbar,    .nav-link > .active {
     @include green-bg-ft();
 }
 
+#navbar-nav > .navbar-nav > .nav-item > a{
+    @include green-bg-ft();
+    position: relative;
+    z-index: 50;
+    margin: auto;
+    width: 20%;
+}   
+
+.nav-tabs > .nav-item > a, .nav-tabs, .nav-tabs > .nav-item > a.active{
+    border: none;
+    @include green-bg-ft(); 
+}
 
 
 .navbar-nav{
@@ -63,7 +75,8 @@ body, .navbar, .nav-tabs > .nav-item > button, .nav-tabs > .nav-item > button.ac
 }
 .bottom-bar{
     position: absolute;
-    margin: 305px 0px 0px 20px;
+    bottom: 0;
+    margin: 305px 0px 5px 20px;
     width: 100%;
     font-weight: 300;// maybe to remove
     @include green-bg-ft();
@@ -90,4 +103,26 @@ body::after{
     background: repeating-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) 1px, #000000 2px, #000000 2px);
     top: 0;
     opacity: .8;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.navbar-nav > .nav-item.active::before{
+    content: "";
+    border-left: 2px solid $font-green;
+    border-right: 2px solid $font-green;
+    border-top: 2px solid $font-green;
+    width: 230px;
+    height: 30px;
+    position: absolute;
+    top: 60px;
+    left: 180px;
+}
+
+.nav-tabs > li:nth-child(2) > a{
+    opacity: 0.5;
+}
+
+.nav-tabs > li:nth-child(3) > a{
+    opacity: 0.2;
 }

@@ -2,10 +2,29 @@ body {
   overflow: hidden;
 }
 
-body, .navbar, .nav-tabs > .nav-item > button, .nav-tabs > .nav-item > button.active, #navbar-nav > .navbar-nav > .nav-item > a, .nav-link > .active {
+body, .navbar, .nav-link > .active {
   color: #14fe17;
   background: #272b23;
-  font-size: 24px;
+  font-size: 32px;
+  font-family: monospace;
+}
+
+#navbar-nav > .navbar-nav > .nav-item > a {
+  color: #14fe17;
+  background: #272b23;
+  font-size: 32px;
+  font-family: monospace;
+  position: relative;
+  z-index: 50;
+  margin: auto;
+  width: 20%;
+}
+
+.nav-tabs > .nav-item > a, .nav-tabs, .nav-tabs > .nav-item > a.active {
+  border: none;
+  color: #14fe17;
+  background: #272b23;
+  font-size: 32px;
   font-family: monospace;
 }
 
@@ -49,12 +68,13 @@ body, .navbar, .nav-tabs > .nav-item > button, .nav-tabs > .nav-item > button.ac
 
 .bottom-bar {
   position: absolute;
-  margin: 305px 0px 0px 20px;
+  bottom: 0;
+  margin: 305px 0px 5px 20px;
   width: 100%;
   font-weight: 300;
   color: #14fe17;
   background: #272b23;
-  font-size: 24px;
+  font-size: 32px;
   font-family: monospace;
   font-size: 30px;
 }
@@ -78,4 +98,26 @@ body::after {
   background: repeating-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) 1px, #000000 2px, #000000 2px);
   top: 0;
   opacity: 0.8;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.navbar-nav > .nav-item.active::before {
+  content: "";
+  border-left: 2px solid #14fe17;
+  border-right: 2px solid #14fe17;
+  border-top: 2px solid #14fe17;
+  width: 230px;
+  height: 30px;
+  position: absolute;
+  top: 60px;
+  left: 180px;
+}
+
+.nav-tabs > li:nth-child(2) > a {
+  opacity: 0.5;
+}
+
+.nav-tabs > li:nth-child(3) > a {
+  opacity: 0.2;
 }/*# sourceMappingURL=style.css.map */
