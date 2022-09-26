@@ -126,3 +126,20 @@ body::after{
 .nav-tabs > li:nth-child(3) > a{
     opacity: 0.2;
 }
+
+.level-progress-bar{
+    display: inline;
+    border: 3px solid $font-green;
+    width: 1240px;
+    position: absolute;
+    bottom: 0;
+    height: 26px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    .level-progress-bar-indicator{
+        width: 70%;
+        border: none;
+        background-color: $font-green;
+        height: 100%;
+    }
+}
