@@ -57,11 +57,16 @@ body, .navbar, .nav-link > .active {
   left: 18px;
 }
 
+.center-image {
+  position: absolute;
+  margin: auto;
+  width: 95%;
+}
 .center-image img {
   margin: auto;
   display: block;
-  height: 811px;
-  margin-top: 35px;
+  height: 600px;
+  margin-top: 85px;
   transform: scaleX(-1);
   filter: grayscale(1) sepia(100%) hue-rotate(64deg) saturate(4) brightness(1) contrast(1);
 }
@@ -85,7 +90,7 @@ body, .navbar, .nav-link > .active {
   background-color: #0b4a07;
 }
 
-.col-3 {
+.footer-item.col-3 {
   width: 24%;
   margin: 0px 3px 0px 3px;
 }
@@ -97,7 +102,7 @@ body::after {
   position: absolute;
   background: repeating-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) 1px, #000000 2px, #000000 2px);
   top: 0;
-  opacity: 0.8;
+  opacity: 0.5;
   z-index: 100;
   pointer-events: none;
 }
@@ -123,18 +128,55 @@ body::after {
 }
 
 .level-progress-bar {
-  display: inline;
+  display: inline-block;
   border: 3px solid #14fe17;
-  width: 1240px;
-  position: absolute;
-  bottom: 0;
-  height: 26px;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  height: 20px;
+  margin: auto;
+  width: 88%;
 }
 .level-progress-bar .level-progress-bar-indicator {
   width: 70%;
   border: none;
   background-color: #14fe17;
   height: 100%;
+}
+
+.mini-status-bars .level-progress-bar {
+  margin: auto;
+  width: 60px;
+}
+
+.mini-status-bars > .row {
+  margin-bottom: 200px;
+}
+
+.mini-status-bars .level-progress-bar .w10 {
+  width: 10%;
+}
+.mini-status-bars .level-progress-bar .w20 {
+  width: 20%;
+}
+.mini-status-bars .level-progress-bar .w30 {
+  width: 30%;
+}
+.mini-status-bars .level-progress-bar .w40 {
+  width: 40%;
+}
+.mini-status-bars .level-progress-bar .w50 {
+  width: 50%;
+}
+.mini-status-bars .level-progress-bar .w60 {
+  width: 60%;
+}
+.mini-status-bars .level-progress-bar .w70 {
+  width: 70%;
+}
+.mini-status-bars .level-progress-bar .w80 {
+  width: 80%;
+}
+.mini-status-bars .level-progress-bar .w90 {
+  width: 90%;
+}
+.mini-status-bars .level-progress-bar .w100 {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
