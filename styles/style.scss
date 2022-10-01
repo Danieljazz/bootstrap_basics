@@ -196,3 +196,15 @@ body::after{
         @include iconGreenFilter();
 }
 
+.item-list > li, a{
+    list-style: none;
+    width: 30%;
+    text-decoration: none;
+    color: $font-green;
+    padding: 2px 2px;
+    a:hover{
+        background: $font-green;
+        width: 40%;
+        color: #272b23;
+    }
+}

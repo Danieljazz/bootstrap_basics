@@ -208,4 +208,17 @@ body::after {
   height: auto;
   margin-top: 15px;
   filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(64deg) saturate(4) contrast(1);
+}
+
+.item-list > li, a {
+  list-style: none;
+  width: 30%;
+  text-decoration: none;
+  color: #14fe17;
+  padding: 2px 2px;
+}
+.item-list > li a:hover, a a:hover {
+  background: #14fe17;
+  width: 40%;
+  color: #272b23;
 }/*# sourceMappingURL=style.css.map */
