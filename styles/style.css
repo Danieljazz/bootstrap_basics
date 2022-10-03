@@ -74,7 +74,7 @@ body, .navbar, .nav-link > .active {
 .center-image img {
   margin: auto;
   display: block;
-  height: 600px;
+  height: 30vh;
   margin-top: 85px;
   transform: scaleX(-1);
   filter: grayscale(1) sepia(100%) hue-rotate(64deg) saturate(4) brightness(1) contrast(1);
@@ -167,7 +167,7 @@ body::after {
 }
 
 .mini-status-bars > .margin-bottom {
-  margin-bottom: 200px;
+  margin-bottom: 8vh;
 }
 
 .mini-status-bars .level-progress-bar .w10 {
@@ -204,16 +204,17 @@ body::after {
 .damage-resistance {
   width: 50%;
   margin: auto;
-  margin-top: 90px;
+  margin-top: 3vh;
   text-align: center;
 }
 .damage-resistance .col-1 {
   background-color: #0b4a07;
   border: 3px solid #272b23;
-  width: 100px;
+  width: 5vw;
+  height: 12vh;
 }
 .damage-resistance .col-1.armor {
-  margin-left: 30px;
+  margin-left: 3vw;
 }
 
 .icon img {
@@ -222,24 +223,25 @@ body::after {
 }
 
 .damage-resistance img {
-  width: 100%;
+  width: 3vw;
+  height: 5vh;
   height: auto;
   margin-top: 15px;
   filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(64deg) saturate(4) contrast(1);
 }
 
-.item-list li {
+.item-list li, .specials-items li {
   list-style: none;
   width: 30vw;
 }
-.item-list li a {
+.item-list li a, .specials-items li a {
   text-decoration: none;
   color: #14fe17;
   display: block;
   width: 100%;
   padding: 5px 15px;
 }
-.item-list li a.active::before {
+.item-list li a.active::before, .specials-items li a.active::before {
   width: 14px;
   height: 14px;
   background: #14fe17;
@@ -249,22 +251,24 @@ body::after {
   border: 2px solid #fff;
 }
 
-.item-list li a:hover {
+.item-list li a:hover, .specials-items li a:hover {
   background: #14fe17;
   color: #272b23;
 }
 
+.stick-left {
+  float: left;
+}
+
+.stick-right {
+  float: right;
+}
+
 .item-stats {
-  width: 15vw;
+  width: 25vw;
   position: absolute;
   bottom: 6vh;
   right: 3vw;
-}
-.item-stats .stick-left {
-  float: left;
-}
-.item-stats .stick-right {
-  float: right;
 }
 .item-stats .col-12 {
   background-color: #0b4a07;
@@ -282,4 +286,36 @@ body::after {
 .icon-stat-item img {
   width: 100%;
   filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(64deg) saturate(4) contrast(1);
+}
+
+.specials-items {
+  width: 35vw;
+  margin-left: 5px;
+  height: 66vh;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #272b23;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid #14fe17;
+}
+
+.specials-description {
+  position: relative;
+  right: -53vw;
+  width: 45vw;
+  margin-top: -750px;
+}
+.specials-description img {
+  filter: grayscale(1) sepia(100%) hue-rotate(64deg) saturate(4) brightness(1) contrast(1);
+  width: 30vw;
+  height: 50vh;
+  margin: 1vh 4vw;
 }/*# sourceMappingURL=style.css.map */
