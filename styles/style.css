@@ -319,4 +319,17 @@ body::after {
   width: 30vw;
   height: 50vh;
   margin: 1vh 4vw;
+}
+
+.apparel-tab-description .apparel-tab-img {
+  margin-right: 6vw;
+  float: right;
+  margin-top: -560px;
+  height: 500px;
+  width: auto;
+  transform: scaleX(-1);
+  filter: grayscale(1) sepia(100%) hue-rotate(64deg) saturate(4) brightness(1) contrast(1);
+}
+.apparel-tab-description .item-stats {
+  bottom: 10vh;
 }/*# sourceMappingURL=style.css.map */

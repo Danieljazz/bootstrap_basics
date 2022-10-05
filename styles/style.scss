@@ -307,3 +307,18 @@ body::after{
     }
 }
 
+
+
+.apparel-tab-description{
+    .apparel-tab-img {
+        margin-right: 6vw;
+        float: right;
+        margin-top: -560px;
+        height: 500px;
+        width: auto;
+        transform: scaleX(-1);
+        @include greenFiltr();
+    }
+    .item-stats{
+    bottom: 10vh;
+}}

@@ -26,14 +26,26 @@ var weapons = [{
     'weight': 9.6,
     'caps_value': 55}];
 
+var apparel = [{'name': 'leather-left-arm','dmg-resist-shield': 1, 'dmg-resist-thunder': 3, 'weight': 2, 'value': 8},
+               {'name': 'leather-right-arm','dmg-resist-shield': 1, 'dmg-resist-thunder': 3, 'weight': 2, 'value': 8},
+               {'name': 'leather-right-leg','dmg-resist-shield': 2, 'dmg-resist-thunder': 5, 'weight': 2, 'value': 10},
+               {'name': 'mining-helmet','dmg-resist-shield': 2, 'dmg-resist-thunder': 2, 'weight': 2, 'value': 8},
+               {'name': 'raider-chest-piece','dmg-resist-shield': 1, 'dmg-resist-thunder': 3, 'weight': 2, 'value': 8},
+               {'name': 'raider-left-leg','dmg-resist-shield': 1, 'dmg-resist-thunder': 3, 'weight': 2, 'value': 8},
+               {'name': 'vault-111-jumpsuit','dmg-resist-shield': 2, 'dmg-resist-thunder': 5, 'weight': 2, 'value': 10},
+               {'name': 'wedding-ring','dmg-resist-shield': 2, 'dmg-resist-thunder': 2, 'weight': 2, 'value': 8},
+               {'name': 'wedding-goggles','dmg-resist-shield': 2, 'dmg-resist-thunder': 2, 'weight': 2, 'value': 8}]
 
+var tabs = ['weapons-tab', 'apparel-tab', 'aid-tab', 'misc-tab', 'junk-tab', 'mods-tab', 'ammo-tab']
 
 
 //INV tab
-// weapon stat update
 var weapon_container = document.getElementsByClassName('item-list')[0]
+var apparel_container = document.getElementById('apparel-tab');
+
+
 let item_list = document.querySelectorAll('#weapons-tab > ul > li > a')
-//console.log(item_list)
+
 item_list.forEach(item =>{
     item.addEventListener('click', function(){
         for(const item of item_list){
@@ -57,6 +69,21 @@ weapon_container.addEventListener('mouseover', function(e){
             stat_container.getElementsByClassName('accuracy')[0].nextElementSibling.innerHTML = w['accuracy'];
             stat_container.getElementsByClassName('weight')[0].nextElementSibling.innerHTML = w['weight'];
             stat_container.getElementsByClassName('caps_value')[0].nextElementSibling.innerHTML = w['caps_value'];
+        }
+    });
+    
+})
+
+apparel_container.addEventListener('mouseover', function(e){
+    var chosen_apparel = e.target.className
+    apparel.forEach(a => {
+        if (chosen_apparel === a['name']){
+            console.log(a);
+            var stat_container = document.getElementsByClassName('apparel-tab item-stats')[0];
+            document.getElementsByClassName('apparel-tab item-stats')[0].getElementsByClassName('shield-value')[0].getElementsByClassName('value')[0].innerHTML = a['dmg-resist-shield'];
+            stat_container.getElementsByClassName('thunder-value')[0].getElementsByClassName('value')[0].innerHTML = a['dmg-resist-thunder'];
+            stat_container.getElementsByClassName('apparel-weight')[0].nextElementSibling.innerHTML = a['weight'];
+            stat_container.getElementsByClassName('apparel-value')[0].nextElementSibling.innerHTML = a['value'];
         }
     });
     

@@ -12,9 +12,7 @@ var stats_items = [{'name': 'strength', 'img': 'https://static.wikia.nocookie.ne
 {'name': 'pickpocket', 'img': 'https://static.wikia.nocookie.net/fallout/images/7/7a/Fo4_Pickpocket.png/revision/latest?cb=20151115230517', 'description': 'Your quick hands and sticky fingers make picking pockets 25% easier.'},
 {'name': 'sniper', 'img': 'https://static.wikia.nocookie.net/fallout/images/8/8b/Fo4_Sniper.png/revision/latest?cb=20151115202842', 'description': "It's all about focus. You have improved control and can hold your breath longer when aiming with scopes."}]
 
-// STAT TAB
-// SPECIAL
-console.log('hi')
+
 var tabs = ['special-tab', 'perks-tab']
 
 tabs.forEach(tab => {
@@ -23,15 +21,14 @@ tabs.forEach(tab => {
         itemClass = e.target.className.replace(' stick-left', '')
         console.log(itemClass)
         stats_items.forEach(item =>{
-        if(item['name'] === itemClass){
-            imgId = 'special-img ' + tab
-            descId = 'special-description-p ' + tab
-        document.getElementById(imgId).src  = item['img'];
-        document.getElementById(descId).innerText = item['description']
-        }
+            if(item['name'] === itemClass){
+                imgId = 'special-img ' + tab
+                descId = 'special-description-p ' + tab
+            document.getElementById(imgId).src  = item['img'];
+            document.getElementById(descId).innerText = item['description']
+            }
         })
-        
-        })
+    })
 })
 
 
