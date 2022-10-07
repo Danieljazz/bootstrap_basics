@@ -89,31 +89,22 @@ body, .navbar,    .nav-link > .active {
 }
 
 .bottom-bar{
+    height: 50px;
     position: absolute;
     bottom: 0;
-    margin: 305px 0px 5px 20px;
-    width: 99vw;
-    font-weight: 300;// maybe to remove
-    @include green-bg-ft();
+    margin: 305px 0px 3px 41px;
+    width: 97.4vw;
     font-size: 30px;
-    height: -1vw;
+    background: $background-green
 }
 
 .footer-item{
-    border: 1px solid $font-green;
-    margin: 0px 5px 0px 5px;
+    border: 4px solid $background;
     background-color: $background-green;
 }
 
-.footer-item.col-3{
-    width: 24vw;
-    margin: 0px 3px 0px 3px;
-}
 
-.footer-item.col-6{
-    width: 48vw;
-    margin: 0px 3px 0px 3px;
-}
+
 
 
 body::after{
@@ -233,7 +224,7 @@ body::after{
     }
 }
 
-.item-list li a:hover{
+.item-list li a:hover, .radio-list.item-list > li > a.active-green-bg{
     background: $font-green;
     color: $background;
 }
@@ -319,6 +310,30 @@ body::after{
         transform: scaleX(-1);
         @include greenFiltr();
     }
-    .item-stats{
+}
+
+.item-stats{
     bottom: 10vh;
+}
+
+.radio-tab-description{
+    top: 8px;
+    position: absolute;
+    margin: 116px 41.7vw;
+    width: 56vw;
+    height: auto;
+    .radio-tab-img{
+        width: 100%;
+        height: auto;
+        @include greenFiltr();
 }}
+
+
+.map-img{
+    width: 84vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 1200px;
+}

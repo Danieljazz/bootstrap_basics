@@ -81,33 +81,18 @@ body, .navbar, .nav-link > .active {
 }
 
 .bottom-bar {
+  height: 50px;
   position: absolute;
   bottom: 0;
-  margin: 305px 0px 5px 20px;
-  width: 99vw;
-  font-weight: 300;
-  color: #14fe17;
-  background: #272b23;
-  font-size: 32px;
-  font-family: monospace;
+  margin: 305px 0px 3px 41px;
+  width: 97.4vw;
   font-size: 30px;
-  height: -1vw;
+  background: #0b4a07;
 }
 
 .footer-item {
-  border: 1px solid #14fe17;
-  margin: 0px 5px 0px 5px;
+  border: 4px solid #272b23;
   background-color: #0b4a07;
-}
-
-.footer-item.col-3 {
-  width: 24vw;
-  margin: 0px 3px 0px 3px;
-}
-
-.footer-item.col-6 {
-  width: 48vw;
-  margin: 0px 3px 0px 3px;
 }
 
 body::after {
@@ -251,7 +236,7 @@ body::after {
   border: 2px solid #fff;
 }
 
-.item-list li a:hover, .specials-items li a:hover {
+.item-list li a:hover, .specials-items li a:hover, .radio-list.item-list > li > a.active-green-bg, .radio-list.specials-items > li > a.active-green-bg {
   background: #14fe17;
   color: #272b23;
 }
@@ -330,6 +315,29 @@ body::after {
   transform: scaleX(-1);
   filter: grayscale(1) sepia(100%) hue-rotate(64deg) saturate(4) brightness(1) contrast(1);
 }
-.apparel-tab-description .item-stats {
+
+.item-stats {
   bottom: 10vh;
+}
+
+.radio-tab-description {
+  top: 8px;
+  position: absolute;
+  margin: 116px 41.7vw;
+  width: 56vw;
+  height: auto;
+}
+.radio-tab-description .radio-tab-img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(1) sepia(100%) hue-rotate(64deg) saturate(4) brightness(1) contrast(1);
+}
+
+.map-img {
+  width: 84vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 1200px;
 }/*# sourceMappingURL=style.css.map */
