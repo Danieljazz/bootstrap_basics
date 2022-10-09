@@ -92,8 +92,8 @@ body, .navbar,    .nav-link > .active {
     height: 50px;
     position: absolute;
     bottom: 0;
-    margin: 305px 0px 3px 41px;
-    width: 97.4vw;
+    margin: 305px 0px 5px 28px;
+    width: 96.4vw;
     font-size: 30px;
     background: $background-green
 }
@@ -264,7 +264,7 @@ body::after{
 }
 }
 
-.specials-items{
+.scrollable-container{
     @extend .item-list;
     width: 35vw;
     margin-left: 5px;
@@ -336,4 +336,22 @@ body::after{
     margin-right: auto;
     display: block;
     max-width: 1200px;
+}
+
+.footer-img{
+    position: absolute;
+    height: 80%;
+    @include greenFiltr();
+}
+
+.icon-text{
+    margin-left: 60px;
+}
+
+.local-map-footer{
+    float: right;
+    background: $font-green;
+    color: $background-green;
+    height: 85%;
+    margin-top: 4px;
 }

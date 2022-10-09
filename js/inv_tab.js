@@ -36,7 +36,28 @@ var apparel = [{'name': 'leather-left-arm','dmg-resist-shield': 1, 'dmg-resist-t
                {'name': 'wedding-ring','dmg-resist-shield': 2, 'dmg-resist-thunder': 2, 'weight': 2, 'value': 8},
                {'name': 'wedding-goggles','dmg-resist-shield': 2, 'dmg-resist-thunder': 2, 'weight': 2, 'value': 8}]
 
-var tabs = ['weapons-tab', 'apparel-tab', 'aid-tab', 'misc-tab', 'junk-tab', 'mods-tab', 'ammo-tab']
+var miscItems = [{'name': 'atomic-command', 'weight': 0, 'value': 300},
+                {'name': 'bobby-pin','weight': 0, 'value': 1}]
+
+var junkItems = [{'name': 'baseball', 'weight': 0.6, 'value': 4},
+                {'name': 'desk-fan','weight': 3, 'value': 4},
+                {'name': 'duct-tape', 'weight': 0.1, 'value': 12},
+                {'name': 'fancy-hairbrush','weight': 0.5, 'value': 9},
+                {'name': 'ladel', 'weight': 0.5, 'value': 2},
+                {'name': 'oven-mitt','weight': 1, 'value': 1},
+                {'name': 'paint-can', 'weight': 5, 'value': 10},
+                {'name': 'resarch-test-tube','weight': 0.1, 'value': 1},
+                {'name': 'silver-table-knife', 'weight': 0.1, 'value': 4},
+                {'name': 'tin-can','weight': 0.1, 'value': 1},
+                {'name': 'toy-rocketship', 'weight': 0.5, 'value': 7},
+                {'name': 'unused-flip-lighter','weight': 0.5, 'value': 21},
+                {'name': 'wonderglue','weight': 0.1, 'value': 20}]               
+
+var ammoItems = [{'name': 'atomic-command', 'weight': 0, 'value': 300},
+                 {'name': 'bobby-pin','weight': 0, 'value': 1}] 
+
+var defaultTableItems = miscItems.concat(junkItems, ammoItems);
+var defaultTableTabs = ['misc-tab', 'junk-tab', 'ammo-tab']
 
 
 //INV tab
@@ -88,3 +109,18 @@ apparel_container.addEventListener('mouseover', function(e){
     });
     
 })
+
+defaultTableTabs.forEach( tab => {
+    var tabContainer = document.getElementById(tab)
+    tabContainer.addEventListener('mouseover', function(e){
+        var itemClass = e.target.className;
+        defaultTableItems.forEach(item => {
+        if (itemClass === item['name']){
+            var itemStatContainer = document.getElementsByClassName(tab, 'item-stats')[0]
+            itemStatContainer.getElementsByClassName('weight')[0].nextElementSibling.innerHTML = item['weight']
+            itemStatContainer.getElementsByClassName('item-value')[0].nextElementSibling.innerHTML = item['value']
+            console.log(itemClass);}
+        })
+        
+    });
+});

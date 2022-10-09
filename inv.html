@@ -57,7 +57,7 @@
                 </ul> 
                 <div class="tab-content">
                     <div class="tab-pane active" id="weapons-tab" role="tabpanel">
-                        <ul class="item-list">
+                        <ul class="item-list scrollable-container">
                             <li><a href="#" class="44_pistol active">.44 pistol</a></li>
                             <li><a href="#" class="assalut_rifle">Assalut rifle</a></li>
                             <li><a href="#" class="reba">Reba</a></li>
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="apparel-tab" role="tabpanel">
-                        <ul class="item-list">
+                        <ul class="item-list scrollable-container">
                             <li><a class="leather-left-arm" href="#">Leather Left Arm</a></li>
                             <li><a class="leather-right-arm" href="#">Leather Right Arm</a></li>
                             <li><a class="leather-right-leg" href="#">Leather Right Leg</a></li>
@@ -161,7 +161,7 @@
                     </div>
                     <div class="tab-pane" id="aid-tab" role="tabpanel">EMPTY</div>
                     <div class="tab-pane" id="misc-tab" role="tabpanel">
-                        <ul class="item-list">
+                        <ul class="item-list scrollable-container">
                             <li><a class="atomic-command" href="#">Atomic Command</a></li>
                             <li><a class="bobby-pin" href="#">Bobby Pin (21)</a></li>
                         </ul>
@@ -169,13 +169,13 @@
                             <div class="misc-tab item-stats">
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="stick-left misc-weight">Weight</div>
+                                        <div class="stick-left weight">Weight</div>
                                         <div class="stick-right value"> 12 </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="stick-left misc-value">Value</div>
+                                        <div class="stick-left item-value">Value</div>
                                         <div class="stick-right value"> 12 </div>
                                     </div>
                                 </div>
@@ -183,21 +183,36 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="junk-tab" role="tabpanel">
-                        <ul class="item-list">
-                            <li><a class="atomic-command" href="#">Atomic Command</a></li>
-                            <li><a class="bobby-pin" href="#">Bobby Pin (21)</a></li>
+                        <ul class="item-list scrollable-container">
+                            <li><a class="baseball" href="#">Baseball</a></li>
+                            <li><a class="desk-fan" href="#">Desk Fan</a></li>
+                            <li><a class="duct-tape" href="#">Duct Tape (2)</a></li>
+                            <li><a class="fancy-hairbrush" href="#">Fancy Hairbrush</a></li>
+                            <li><a class="ladel" href="#">Ladel</a></li>
+                            <li><a class="oven-mitt" href="#">Oven Mitt</li></a></li>
+                            <li><a class="paint-can" href="#">Paint Can</a></li>
+                            <li><a class="resarch-test-tube" href="#">Resarch Test Tube</a></li>
+                            <li><a class="silver-table-knife" href="#">Silver Table Knife</a></li>
+                            <li><a class="tin-can" href="#">Tin Can</a></li>
+                            <li><a class="toy-rocketship" href="#">Toy Rocketship</a></li>
+                            <li><a class="unused-flip-lighter" href="#">Unused Flip Lighter</a></li>
+                            <li><a class="wonderglue" href="#">Wonderglue (2)</a></li>
+                            <li><a class="unused-flip-lighter" href="#">Unused Flip Lighter</a></li>
+                            <li><a class="wonderglue" href="#">Wonderglue (2)</a></li>
+                            <li><a class="unused-flip-lighter" href="#">Unused Flip Lighter</a></li>
+                            <li><a class="wonderglue" href="#">Wonderglue (2)</a></li>
                         </ul>
                         <div class="items-tab-description">
-                            <div class="misc-tab item-stats">
+                            <div class="junk-tab item-stats">
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="stick-left misc-weight">Weight</div>
+                                        <div class="stick-left weight">Weight</div>
                                         <div class="stick-right value"> 12 </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="stick-left misc-value">Value</div>
+                                        <div class="stick-left item-value">Value</div>
                                         <div class="stick-right value"> 12 </div>
                                     </div>
                                 </div>
@@ -205,22 +220,23 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="mods-tab" role="tabpanel">EMPTY</div>
+                    <!-- TODO:Finish ammo tab -->
                     <div class="tab-pane" id="ammo-tab" role="tabpanel">
-                        <ul class="item-list">
+                        <ul class="item-list scrollable-container">
                             <li><a class="atomic-command" href="#">Atomic Command</a></li>
                             <li><a class="bobby-pin" href="#">Bobby Pin (21)</a></li>
                         </ul>
                         <div class="items-tab-description">
-                            <div class="misc-tab item-stats">
+                            <div class="ammo-tab item-stats">
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="stick-left misc-weight">Weight</div>
+                                        <div class="stick-left weight">Weight</div>
                                         <div class="stick-right value"> 12 </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="stick-left misc-value">Value</div>
+                                        <div class="stick-left item-value">Value</div>
                                         <div class="stick-right value"> 12 </div>
                                     </div>
                                 </div>
@@ -230,25 +246,23 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-bar">
+        <footer class="bottom-bar">
             <div class="row">
                 <div class="col-3 footer-item">
-                    HP 90/90
+                    <img src="https://www.freepnglogos.com/uploads/dumbbell/sports-dumbbell-icon-ios-iconset-icons-11.png" alt="weight" class="footer-img">
+                    <span class="icon-text">133/140</span>
+                </div>
+                <div class="col-3 footer-item">
+                    <img src="https://static.wikia.nocookie.net/fallout/images/1/1a/Score_currency_caps_l.webp/revision/latest?cb=20210528055019" alt="caps" class="footer-img">
+                    <span class="icon-text">576</span>
                 </div>
                 <div class="col-6 footer-item">
-                    Level 69
-                        <div class="level-progress-bar">
-                            <div class="level-progress-bar-indicator"></div>
-                        </div>
-                    </div>
-                <div class="col-3 footer-item">
-                    AP 50/50
                 </div>
             </div>
-        </div>
+        </footer>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <script src="./js/pipboy.js"></script>
+        <script src="./js/inv_tab.js"></script>
     </body>
 </html>
