@@ -53,8 +53,13 @@ var junkItems = [{'name': 'baseball', 'weight': 0.6, 'value': 4},
                 {'name': 'unused-flip-lighter','weight': 0.5, 'value': 21},
                 {'name': 'wonderglue','weight': 0.1, 'value': 20}]               
 
-var ammoItems = [{'name': 'atomic-command', 'weight': 0, 'value': 300},
-                 {'name': 'bobby-pin','weight': 0, 'value': 1}] 
+var ammoItems = [{'name': '308_round', 'weight': 0, 'value': 3},
+                 {'name': '10_mm_round','weight': 0, 'value': 2},
+                 {'name': '556_round', 'weight': 0, 'value': 2},
+                 {'name': '5_mm_round','weight': 0, 'value': 3},
+                 {'name': 'fusion_cell', 'weight': 0, 'value': 3},
+                 {'name': 'mini_nuke','weight': 0, 'value': 100},
+                 {'name': 'shotgun_shell', 'weight': 0, 'value': 3}] 
 
 var defaultTableItems = miscItems.concat(junkItems, ammoItems);
 var defaultTableTabs = ['misc-tab', 'junk-tab', 'ammo-tab']

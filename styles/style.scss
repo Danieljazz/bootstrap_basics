@@ -304,8 +304,8 @@ body::after{
     .apparel-tab-img {
         margin-right: 6vw;
         float: right;
-        margin-top: -560px;
-        height: 500px;
+        margin-top: -700px;
+        height: 50vh;
         width: auto;
         transform: scaleX(-1);
         @include greenFiltr();
@@ -354,4 +354,27 @@ body::after{
     color: $background-green;
     height: 85%;
     margin-top: 4px;
+}
+
+.general-stat-container{
+    position: absolute;
+    top: 170px;
+    right: 21px;
+    .value{
+        float:right;
+    }
+    li{
+        background-color: $background-green;
+        border: 1px solid $background;
+    }
+}
+
+.general-stat-container >  .quests, .combats, .craftings, .crimes{
+    opacity: 0;
+}
+
+.stat-tab.general:has(.active-green-bg){
+    .general-container{
+        opacity: 1;
+    }
 }
