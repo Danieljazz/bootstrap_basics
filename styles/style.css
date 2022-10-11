@@ -360,23 +360,23 @@ body::after {
   margin-top: 4px;
 }
 
-.general-stat-container {
-  position: absolute;
-  top: 170px;
-  right: 21px;
+#general-stat-container {
+  text-align: left;
+  position: relative;
+  top: -687px;
+  right: -869px;
 }
-.general-stat-container .value {
+#general-stat-container .value {
   float: right;
 }
-.general-stat-container li {
+#general-stat-container li {
   background-color: #0b4a07;
   border: 1px solid #272b23;
 }
-
-.general-stat-container > .quests, .combats, .craftings, .crimes {
-  opacity: 0;
+#general-stat-container .generals, #general-stat-container .quests, #general-stat-container .combats, #general-stat-container .craftings, #general-stat-container .crimes {
+  display: none;
 }
 
-.stat-tab.general:has(.active-green-bg) .general-container {
-  opacity: 1;
+#general-stat-container > .scrollable-container > div.active-container {
+  display: contents !important;
 }/*# sourceMappingURL=style.css.map */

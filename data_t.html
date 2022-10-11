@@ -50,16 +50,16 @@
                     <div class="tab-pane" id="sts-tab" role="tabpanel">
                         <div class="container-fluid" id="stat-tab-item-list">
                             <ul class="radio-list item-list scrollable-container">
-                                <li><a class="stat-tab general active-green-bg" href="#">General</a></li>
-                                <li><a class="stat-tab quest" href="#">Quest</a></li>
-                                <li><a class="stat-tab comabt" href="#">Combat</a></li>
-                                <li><a class="stat-tab crafting" href="#">Crafting</a></li>
-                                <li><a class="stat-tab crime" href="#">Crime</a></li>
+                                <li><a class="stat-tab generals active-green-bg" href="#">General</a></li>
+                                <li><a class="stat-tab quests" href="#">Quest</a></li>
+                                <li><a class="stat-tab combats" href="#">Combat</a></li>
+                                <li><a class="stat-tab craftings" href="#">Crafting</a></li>
+                                <li><a class="stat-tab crimes" href="#">Crime</a></li>
                             </ul>
                         </div>
-                        <div class="general-stat-container">
+                        <div id="general-stat-container">
                             <div class="scrollable-container">
-                                <div class="generals">
+                                <div class="generals active-container">
                                     <ul>
                                         <li>
                                             <div>
@@ -67,35 +67,258 @@
                                                 <span class="value">0</span>
                                             </div>
                                         </li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
-                                        <li>Hahaha</li>
+                                        <li>
+                                            <div>
+                                                Locations Cleared
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Days Passed 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Hours Slept
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Hours Waiting 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Caps Found
+                                                <span class="value">576</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Most Caps Carried 
+                                                <span class="value">576</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Junk Collected 
+                                                <span class="value">30</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Chests Looted
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Magazines Found 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Food Eaten 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Stimpaks Taken 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Rad-X Taken 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                RadAway Taken
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Chems Taken 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Fusion Cores Used 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Timers Addicted 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Mines Disarmed 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Pants Exploaded 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Corpses Eaten 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Persuasion Successes 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Bobbleheads Collected 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Sandman Kills 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Paralyzing Punches 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
-                                <div class="quests"></div>
-                                <div class="combats"></div>
-                                <div class="craftings"></div>
-                                <div class="crimes"></div>
+                                <div class="quests">
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                Quests Completed 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Misc Objectives Completed
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Main Quests Completed 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Side Quests Completed 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="combats">
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                People  Killed 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Animals  Killed
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Creatures  Killed 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Robots  Killed 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="craftings">
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                Weapons Mods Crafted 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Armors Mods Crafted 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Plants Harvested
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Chems Crafted 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="crimes">
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                Locks Picked 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Computers Hacked 
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Pockets Picked
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                 Items Stolen
+                                                <span class="value">0</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
